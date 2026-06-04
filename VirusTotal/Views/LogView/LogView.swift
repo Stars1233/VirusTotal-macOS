@@ -65,6 +65,6 @@ struct LogView: View {
 
     /// Remove all the logs in logManager.logs
     private func clearLogs() {
-        logManager.removeAll()
+        logManager.clearLogs()
     }
 }
