@@ -2,6 +2,7 @@
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
         <title>VirusTotal</title>
+            <li>Filter Logs: filter by Type and Time, or look up specific texts using the textfield.</li>
         <item>
             <title>1.5.2</title>
             <pubDate>Sat, 03 Jan 2026 23:15:37 -0800</pubDate>
