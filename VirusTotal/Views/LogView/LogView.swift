@@ -7,40 +7,103 @@
 
 import SwiftUI
 
+// MARK: - Log Level Filter
+
+private enum LogLevelFilter: String, CaseIterable, Identifiable {
+    case all      = "All"
+    case verbose  = "VERBOSE"
+    case debug    = "DEBUG"
+    case info     = "INFO"
+    case warning  = "WARNING"
+    case error    = "ERROR"
+    case critical = "CRITICAL"
+    case fault    = "FAULT"
+
+    var id: String { rawValue }
+
+    var emoji: String {
+        switch self {
+        case .all:                       "🗂️"
+        case .verbose:                   "🟣"
+        case .debug:                     "🟢"
+        case .info:                      "🔵"
+        case .warning:                   "🟡"
+        case .error, .critical, .fault:  "🔴"
+        }
+    }
+}
+
+// MARK: - Time Range Filter
+
+private enum TimeRangeFilter: String, CaseIterable, Identifiable {
+    case all      = "All time"
+    case last1m   = "Last 1 min"
+    case last5m   = "Last 5 min"
+    case last15m  = "Last 15 min"
+    case last1h   = "Last 1 hour"
+
+    var id: String { rawValue }
+
+    var cutoff: Date? {
+        switch self {
+        case .all:     nil
+        case .last1m:  Date(timeIntervalSinceNow: -60)
+        case .last5m:  Date(timeIntervalSinceNow: -300)
+        case .last15m: Date(timeIntervalSinceNow: -900)
+        case .last1h:  Date(timeIntervalSinceNow: -3600)
+        }
+    }
+}
+
+// MARK: - LogView
+
 struct LogView: View {
-    @State private var logManager = LogManager.shared
+    @State private var logManager  = LogManager.shared
+    @State private var searchText  = ""
+    @State private var levelFilter = LogLevelFilter.all
+    @State private var timeFilter  = TimeRangeFilter.all
 
     var body: some View {
-        if !logManager.logs.isEmpty {
-            logDisplay
-        } else {
+        if logManager.logs.isEmpty && !hasActiveFilter {
             LogEmptyView()
+        } else {
+            logDisplay
         }
     }
 
-    // MARK: ViewBuilder
-    private var logDisplay: some View {
-        ScrollViewReader { scrollViewProxy in
-            List {
-                ForEach(logManager.logs) { logEntry in
-                    VStack(alignment: .leading) {
-                        Text(logEntry.message)
-                            .font(.body)
-                        Text(dateFormatter.string(from: logEntry.timestamp))
-                            .font(.caption)
-                            .foregroundColor(.secondary)
-                    }
-                    .id(logEntry.id)
-                    .itemProvider {
-                        NSItemProvider(object: logEntry.message as NSString)
-                    }
-                }
+    // MARK: Computed
+
+    private var hasActiveFilter: Bool {
+        !searchText.isEmpty || levelFilter != .all || timeFilter != .all
+    }
+
+    private var filteredLogs: [LogEntry] {
+        logManager.logs.filter { entry in
+            // Level
+            if levelFilter != .all, !entry.message.contains(levelFilter.rawValue) {
+                return false
             }
-            .listStyle(.plain)
-            .onChange(of: logManager.logs) {
-                if let lastLog = logManager.logs.last {
-                    scrollViewProxy.scrollTo(lastLog.id, anchor: .bottom)
-                }
+            // Time range
+            if let cutoff = timeFilter.cutoff, entry.timestamp < cutoff {
+                return false
+            }
+            // Free-text
+            if !searchText.isEmpty,
+               !entry.message.localizedCaseInsensitiveContains(searchText) {
+                return false
+            }
+            return true
+        }
+    }
+
+    // MARK: Views
+
+    private var logDisplay: some View {
+        ScrollViewReader { proxy in
+            VStack(spacing: 0) {
+                filterBar
+                Divider()
+                logList(proxy: proxy)
             }
             .toolbar {
                 ToolbarItem {
@@ -55,7 +118,82 @@ struct LogView: View {
         }
     }
 
-    // MARK: Private
+    private var filterBar: some View {
+        HStack(spacing: 8) {
+            // Free-text search
+            HStack(spacing: 4) {
+                Image(systemName: "magnifyingglass")
+                    .foregroundStyle(.secondary)
+                TextField("Filter logs…", text: $searchText)
+                    .textFieldStyle(.plain)
+                if !searchText.isEmpty {
+                    Button { searchText = "" } label: {
+                        Image(systemName: "xmark.circle.fill")
+                            .foregroundStyle(.secondary)
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+            .padding(.horizontal, 8)
+            .padding(.vertical, 5)
+            .background(.quaternary, in: RoundedRectangle(cornerRadius: 7))
+
+            // Level picker
+            Picker("Level", selection: $levelFilter) {
+                ForEach(LogLevelFilter.allCases) { level in
+                    Text("\(level.emoji) \(level.rawValue.capitalized)")
+                        .tag(level)
+                }
+            }
+            .labelsHidden()
+            .frame(maxWidth: 130)
+
+            // Time range picker
+            Picker("Time", selection: $timeFilter) {
+                ForEach(TimeRangeFilter.allCases) { range in
+                    Text(range.rawValue).tag(range)
+                }
+            }
+            .labelsHidden()
+            .frame(maxWidth: 120)
+        }
+        .padding(.horizontal, 12)
+        .padding(.vertical, 8)
+    }
+
+    @ViewBuilder
+    private func logList(proxy: ScrollViewProxy) -> some View {
+        if filteredLogs.isEmpty {
+            ContentUnavailableView.search(text: searchText.isEmpty ? levelFilter.rawValue : searchText)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+        } else {
+            List {
+                ForEach(filteredLogs) { entry in
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text(entry.message)
+                            .font(.body)
+                        Text(dateFormatter.string(from: entry.timestamp))
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    }
+                    .id(entry.id)
+                    .itemProvider {
+                        NSItemProvider(object: entry.message as NSString)
+                    }
+                }
+            }
+            .listStyle(.plain)
+            .onChange(of: logManager.logs) {
+                // Only auto-scroll when no filter is active, so the view
+                // doesn't jump unexpectedly mid-search.
+                guard !hasActiveFilter, let last = filteredLogs.last else { return }
+                proxy.scrollTo(last.id, anchor: .bottom)
+            }
+        }
+    }
+
+    // MARK: Helpers
+
     private var dateFormatter: DateFormatter {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
@@ -63,7 +201,6 @@ struct LogView: View {
         return formatter
     }
 
-    /// Remove all the logs in logManager.logs
     private func clearLogs() {
         logManager.clearLogs()
     }

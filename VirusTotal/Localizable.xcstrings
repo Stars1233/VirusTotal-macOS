@@ -45,6 +45,28 @@
         }
       }
     },
+    "%@ %@" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ %2$@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ %2$@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ %2$@"
+          }
+        }
+      }
+    },
     "%lld" : {
       "localizations" : {
         "cs" : {
@@ -85,29 +107,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$lld/%2$lld"
-          }
-        }
-      }
-    },
-    "%lld%%" : {
-      "comment" : "Percentage indicator in File Batch Analysis",
-      "localizations" : {
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld%%"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld%%"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld%%"
           }
         }
       }
@@ -1059,6 +1058,22 @@
         }
       }
     },
+    "Filter logs…" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtrovat protokoly…"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "筛选日志…"
+          }
+        }
+      }
+    },
     "flag.confirmed.timeout" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1879,6 +1894,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "VirusTotal for macOS"
+          }
+        }
+      }
+    },
+    "Level" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Úroveň"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "级别"
           }
         }
       }
@@ -2985,6 +3016,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "网址"
+          }
+        }
+      }
+    },
+    "Time" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Čas"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "时间"
           }
         }
       }

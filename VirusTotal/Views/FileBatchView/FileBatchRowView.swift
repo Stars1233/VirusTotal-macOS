@@ -86,7 +86,7 @@ struct FileBatchRowView: View {
             VStack(alignment: .trailing, spacing: 4) {
                 ProgressView(value: batchFile.uploadProgress)
                     .frame(width: 60)
-                Text("\(Int(batchFile.uploadProgress * 100))%")
+                Text(batchFile.uploadProgress, format: .percent)
                     .font(.caption2)
                     .foregroundStyle(.secondary)
             }
