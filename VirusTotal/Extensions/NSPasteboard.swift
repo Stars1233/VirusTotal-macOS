@@ -15,9 +15,8 @@ extension NSPasteboard {
             .urlReadingFileURLsOnly: true
         ]
 
-        if !contentTypes.isEmpty {
-            options[.urlReadingContentsConformToTypes] = contentTypes.map(\.identifier)
-        }
+        // Finder and Dock file drags can fail the content-type filter even when they are valid files.
+        // Keep the source restricted to file URLs and let callers validate the resulting URLs.
 
         guard let urls = readObjects(forClasses: [NSURL.self], options: options) as? [URL] else {
             return []

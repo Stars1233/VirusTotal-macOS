@@ -33,7 +33,10 @@ struct FileBatchView: View {
                     validateDropInfo(dropInfo)
                 },
                 onPerform: { dropInfo in
-                    handleDropInfo(dropInfo)
+                    Task {
+                        _ = await handleDropInfo(dropInfo)
+                    }
+                    return true
                 }
             ))
             .border(isFileDropped ? Color.accentColor : .clear, width: 5)
@@ -178,12 +181,19 @@ struct FileBatchView: View {
     }
 
     private func validateDropInfo(_ dropInfo: DropInfo) -> Bool {
-        let fileURLs = dropInfo.fileURLsConforming(to: [.data])
-        return !fileURLs.isEmpty
+        return dropInfo.hasFileURLs()
     }
 
-    private func handleDropInfo(_ dropInfo: DropInfo) -> Bool {
-        let fileURLs = dropInfo.fileURLsConforming(to: [.data])
+    private func handleDropInfo(_ dropInfo: DropInfo) async -> Bool {
+        let providers = dropInfo.itemProviders(for: [.fileURL])
+        guard !providers.isEmpty else { return false }
+
+        var fileURLs: [URL] = []
+        for provider in providers {
+            if let url = await provider.fileURL() {
+                fileURLs.append(url)
+            }
+        }
         guard !fileURLs.isEmpty else { return false }
 
         NSApp.activate(ignoringOtherApps: true)

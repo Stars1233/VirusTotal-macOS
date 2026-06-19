@@ -63,7 +63,10 @@ struct MiniFileView: View {
                 validateDropInfo(dropInfo)
             },
             onPerform: { dropInfo in
-                handleDropInfo(dropInfo)
+                Task {
+                    _ = await handleDropInfo(dropInfo)
+                }
+                return true
             }
         ))
         .onChange(of: viewModel.statusMonitor) {
@@ -145,13 +148,25 @@ struct MiniFileView: View {
 
     /// Given a DropInfo, return true if DropInfo is `.data` and is a single item, return false otherwise
     private func validateDropInfo(_ dropInfo: DropInfo) -> Bool {
-        let fileURLs = dropInfo.fileURLsConforming(to: [.data])
-        return fileURLs.count == 1
+        return dropInfo.hasFileURLs()
     }
 
     /// Given a DropInfo, handle the dropped item with onPerform
-    private func handleDropInfo(_ dropInfo: DropInfo) -> Bool {
-        guard let fileURL = dropInfo.fileURLsConforming(to: [.data]).first else {
+    private func handleDropInfo(_ dropInfo: DropInfo) async -> Bool {
+        let providers = dropInfo.itemProviders(for: [.fileURL])
+        guard !providers.isEmpty else {
+            return false
+        }
+
+        var fileURL: URL?
+        for provider in providers {
+            if let url = await provider.fileURL() {
+                fileURL = url
+                break
+            }
+        }
+
+        guard let fileURL else {
             return false
         }
         NSApp.activate(ignoringOtherApps: true)
