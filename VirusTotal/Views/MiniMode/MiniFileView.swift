@@ -145,9 +145,10 @@ return true
         isFileImporterPresent.toggle()
     }
 
-    /// Given a DropInfo, return true if DropInfo is `.data` and is a single item, return false otherwise
+    /// Given a DropInfo, return true if DropInfo contains exactly one item conforming to `.fileURL`, return false otherwise
     private func validateDropInfo(_ dropInfo: DropInfo) -> Bool {
-        return dropInfo.hasFileURLs()
+        let providers = dropInfo.itemProviders(for: [.fileURL])
+        return providers.count == 1
     }
 
     /// Given a DropInfo, handle the dropped item with onPerform
