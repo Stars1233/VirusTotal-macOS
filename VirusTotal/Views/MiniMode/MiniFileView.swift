@@ -63,10 +63,9 @@ struct MiniFileView: View {
                 validateDropInfo(dropInfo)
             },
             onPerform: { dropInfo in
-                Task {
-                    _ = await handleDropInfo(dropInfo)
-                }
-                return true
+guard validateDropInfo(dropInfo) else { return false }
+Task { _ = await handleDropInfo(dropInfo) }
+return true
             }
         ))
         .onChange(of: viewModel.statusMonitor) {

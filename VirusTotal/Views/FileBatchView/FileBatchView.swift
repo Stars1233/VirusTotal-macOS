@@ -33,10 +33,9 @@ struct FileBatchView: View {
                     validateDropInfo(dropInfo)
                 },
                 onPerform: { dropInfo in
-                    Task {
-                        _ = await handleDropInfo(dropInfo)
-                    }
-                    return true
+guard validateDropInfo(dropInfo) else { return false }
+Task { _ = await handleDropInfo(dropInfo) }
+return true
                 }
             ))
             .border(isFileDropped ? Color.accentColor : .clear, width: 5)
