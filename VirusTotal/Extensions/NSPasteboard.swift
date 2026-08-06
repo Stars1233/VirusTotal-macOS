@@ -10,7 +10,7 @@ import Cocoa
 extension NSPasteboard {
     /// Get the file URLs from dragged and dropped files.
     func fileURLs() -> [URL] {
-        var options: [ReadingOptionKey: Any] = [
+        let options: [ReadingOptionKey: Any] = [
             .urlReadingFileURLsOnly: true
         ]
 
