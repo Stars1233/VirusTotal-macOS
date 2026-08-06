@@ -180,12 +180,12 @@ struct FileView: View {
         isFileImporterPresent.toggle()
     }
 
-    /// Given a DropInfo, return true if DropInfo is `.data` and is a single item, return false otherwise
+    /// Given a DropInfo, return true if DropInfo contains exactly one file URL, return false otherwise
     private func validateDropInfo(_ dropInfo: DropInfo) -> Bool {
         guard canDropFile() else {
             return false
         }
-        return dropInfo.hasFileURLs()
+        return dropInfo.itemProviders(for: [.fileURL]).count == 1
     }
 
     /// Given a DropInfo, handle the dropped item with onPerform
