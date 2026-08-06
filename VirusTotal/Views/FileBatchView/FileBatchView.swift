@@ -33,9 +33,14 @@ struct FileBatchView: View {
                     validateDropInfo(dropInfo)
                 },
                 onPerform: { dropInfo in
-guard validateDropInfo(dropInfo) else { return false }
-Task { _ = await handleDropInfo(dropInfo) }
-return true
+                    guard validateDropInfo(dropInfo) else { return false }
+                    Task {
+                        let handled = await handleDropInfo(dropInfo)
+                        if !handled {
+                            log.error("Failed to read dropped files")
+                        }
+                    }
+                    return true
                 }
             ))
             .border(isFileDropped ? Color.accentColor : .clear, width: 5)

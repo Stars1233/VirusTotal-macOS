@@ -63,9 +63,14 @@ struct MiniFileView: View {
                 validateDropInfo(dropInfo)
             },
             onPerform: { dropInfo in
-guard validateDropInfo(dropInfo) else { return false }
-Task { _ = await handleDropInfo(dropInfo) }
-return true
+                guard validateDropInfo(dropInfo) else { return false }
+                Task {
+                    let handled = await handleDropInfo(dropInfo)
+                    if !handled {
+                        log.error("Failed to read dropped file")
+                    }
+                }
+                return true
             }
         ))
         .onChange(of: viewModel.statusMonitor) {
