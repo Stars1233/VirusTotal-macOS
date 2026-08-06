@@ -196,6 +196,9 @@ struct FileBatchView: View {
         for provider in providers {
             if let url = await provider.fileURL() {
                 fileURLs.append(url)
+            } else {
+                let fileName = provider.suggestedName ?? "unknown file"
+                log.error("Failed to read dropped file: \(fileName)")
             }
         }
         guard !fileURLs.isEmpty else { return false }
