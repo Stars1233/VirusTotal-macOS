@@ -211,11 +211,12 @@ struct FileView: View {
         NSApp.activate(ignoringOtherApps: true)
         Task {
             await viewModel.setupFileInfo(fileURL: fileURL)
-            await viewModel.getFileReport()
             /// On macOS 26, AnyDropDelegate will not trigger `dropExited()` when releasing the cursor after dropping a file.
             if #available(macOS 26, *) {
                 isFileDropped = false
             }
+            viewModel.statusMonitor = .loading
+            await viewModel.getFileReport()
         }
         return true
     }
