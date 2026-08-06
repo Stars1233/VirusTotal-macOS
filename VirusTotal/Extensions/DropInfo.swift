@@ -10,7 +10,6 @@ import UniformTypeIdentifiers
 
 extension DropInfo {
     /// Return true if the drop contains at least one file URL.
-    @MainActor
     func hasFileURLs() -> Bool {
         !itemProviders(for: [.fileURL]).isEmpty
     }
