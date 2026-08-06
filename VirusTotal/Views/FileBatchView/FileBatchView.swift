@@ -37,6 +37,7 @@ struct FileBatchView: View {
                     Task {
                         let handled = await handleDropInfo(dropInfo)
                         if !handled {
+                            isFileDropped = false
                             log.error("Failed to read dropped files")
                         }
                     }

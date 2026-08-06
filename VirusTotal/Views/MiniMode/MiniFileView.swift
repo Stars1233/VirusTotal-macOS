@@ -67,6 +67,8 @@ struct MiniFileView: View {
                 Task {
                     let handled = await handleDropInfo(dropInfo)
                     if !handled {
+                        viewModel.statusMonitor = .fail
+                        isFileDropped = false
                         log.error("Failed to read dropped file")
                     }
                 }
