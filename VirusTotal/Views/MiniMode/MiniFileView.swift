@@ -63,7 +63,16 @@ struct MiniFileView: View {
                 validateDropInfo(dropInfo)
             },
             onPerform: { dropInfo in
-                handleDropInfo(dropInfo)
+                guard validateDropInfo(dropInfo) else { return false }
+                Task {
+                    let handled = await handleDropInfo(dropInfo)
+                    if !handled {
+                        viewModel.statusMonitor = .fail
+                        isFileDropped = false
+                        log.error("Failed to read dropped file")
+                    }
+                }
+                return true
             }
         ))
         .onChange(of: viewModel.statusMonitor) {
@@ -143,25 +152,38 @@ struct MiniFileView: View {
         isFileImporterPresent.toggle()
     }
 
-    /// Given a DropInfo, return true if DropInfo is `.data` and is a single item, return false otherwise
+    /// Given a DropInfo, return true if DropInfo contains exactly one item conforming to `.fileURL`, return false otherwise
     private func validateDropInfo(_ dropInfo: DropInfo) -> Bool {
-        let fileURLs = dropInfo.fileURLsConforming(to: [.data])
-        return fileURLs.count == 1
+        let providers = dropInfo.itemProviders(for: [.fileURL])
+        return providers.count == 1
     }
 
     /// Given a DropInfo, handle the dropped item with onPerform
-    private func handleDropInfo(_ dropInfo: DropInfo) -> Bool {
-        guard let fileURL = dropInfo.fileURLsConforming(to: [.data]).first else {
+    private func handleDropInfo(_ dropInfo: DropInfo) async -> Bool {
+        let providers = dropInfo.itemProviders(for: [.fileURL])
+        guard !providers.isEmpty else {
+            return false
+        }
+
+        var fileURL: URL?
+        for provider in providers {
+            if let url = await provider.fileURL() {
+                fileURL = url
+                break
+            }
+        }
+
+        guard let fileURL else {
             return false
         }
         NSApp.activate(ignoringOtherApps: true)
         Task {
             await viewModel.setupFileInfo(fileURL: fileURL)
-            await viewModel.getFileReport()
             /// On macOS 26, AnyDropDelegate will not trigger `dropExited()` when releasing the cursor after dropping a file.
             if #available(macOS 26, *) {
                 isFileDropped = false
             }
+            await viewModel.getFileReport()
         }
         return true
     }

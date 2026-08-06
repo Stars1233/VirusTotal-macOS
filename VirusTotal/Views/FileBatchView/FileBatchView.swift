@@ -33,7 +33,15 @@ struct FileBatchView: View {
                     validateDropInfo(dropInfo)
                 },
                 onPerform: { dropInfo in
-                    handleDropInfo(dropInfo)
+                    guard validateDropInfo(dropInfo) else { return false }
+                    Task {
+                        let handled = await handleDropInfo(dropInfo)
+                        if !handled {
+                            isFileDropped = false
+                            log.error("Failed to read dropped files")
+                        }
+                    }
+                    return true
                 }
             ))
             .border(isFileDropped ? Color.accentColor : .clear, width: 5)
@@ -178,12 +186,22 @@ struct FileBatchView: View {
     }
 
     private func validateDropInfo(_ dropInfo: DropInfo) -> Bool {
-        let fileURLs = dropInfo.fileURLsConforming(to: [.data])
-        return !fileURLs.isEmpty
+        return dropInfo.hasFileURLs()
     }
 
-    private func handleDropInfo(_ dropInfo: DropInfo) -> Bool {
-        let fileURLs = dropInfo.fileURLsConforming(to: [.data])
+    private func handleDropInfo(_ dropInfo: DropInfo) async -> Bool {
+        let providers = dropInfo.itemProviders(for: [.fileURL])
+        guard !providers.isEmpty else { return false }
+
+        var fileURLs: [URL] = []
+        for provider in providers {
+            if let url = await provider.fileURL() {
+                fileURLs.append(url)
+            } else {
+                let fileName = provider.suggestedName ?? "unknown file"
+                log.error("Failed to read dropped file: \(fileName)")
+            }
+        }
         guard !fileURLs.isEmpty else { return false }
 
         NSApp.activate(ignoringOtherApps: true)
