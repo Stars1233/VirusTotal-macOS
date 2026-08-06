@@ -9,24 +9,6 @@ import SwiftUI
 import UniformTypeIdentifiers
 
 extension DropInfo {
-    /// Return dropped file URLs from Finder and other file sources.
-    @MainActor
-    func fileURLs() async -> [URL] {
-        let providers = itemProviders(for: [.fileURL])
-        guard !providers.isEmpty else {
-            return []
-        }
-
-        var urls: [URL] = []
-        for provider in providers {
-            if let url = await provider.fileURL() {
-                urls.append(url)
-            }
-        }
-
-        return urls
-    }
-
     /// Return true if the drop contains at least one file URL.
     @MainActor
     func hasFileURLs() -> Bool {
