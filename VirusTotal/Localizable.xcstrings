@@ -382,7 +382,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "В VirusTotal обнаружена ошибка"
+            "value" : "VirusTotal столкнулся с ошибкой"
           }
         },
         "zh-Hans" : {
@@ -1589,7 +1589,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Необнаруженно"
+            "value" : "Не обнаружено"
           }
         },
         "zh-Hans" : {
@@ -3035,7 +3035,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "You can sign up for a VirusTotal account at https://virustotal.com/gui/join-us to retreive your API key and username"
+            "value" : "You can sign up for a VirusTotal account at https://virustotal.com/gui/join-us to retrieve your API key and username"
           }
         },
         "ru" : {
@@ -3688,7 +3688,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "История сканирования"
+            "value" : "История сканов"
           }
         },
         "zh-Hans" : {
@@ -3965,7 +3965,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Скан"
+            "value" : "Сканировать"
           }
         },
         "zh-Hans" : {
@@ -4133,7 +4133,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Поставщик услуг безопасности %1$lld/%2$lld пометил этот URL-адрес как вредоносный."
+            "value" : "%1$lld/%2$lld поставщиков безопасности пометили этот URL как вредоносный"
           }
         },
         "zh-Hans" : {
