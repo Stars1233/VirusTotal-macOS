@@ -15,6 +15,12 @@
             "value" : ""
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -32,6 +38,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@"
@@ -59,6 +71,12 @@
             "value" : "%1$@ %2$@"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ %2$@"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -76,6 +94,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld"
@@ -103,6 +127,12 @@
             "value" : "%1$lld/%2$lld"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld/%2$lld"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -123,6 +153,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "About VirusTotal"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Про VirusTotal"
           }
         },
         "zh-Hans" : {
@@ -147,6 +183,12 @@
             "value" : "Acknowledgments"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Благодарности"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -169,6 +211,12 @@
             "value" : "Version %1$@ (%2$@)"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Версия %1$@ (%2$@)"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -186,6 +234,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GitHub"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "GitHub"
@@ -213,6 +267,12 @@
             "value" : "Last Analysis Date: %@"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дата последнего анализа: %@"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -233,6 +293,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "+ %lld more"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "+ %lld более"
           }
         },
         "zh-Hans" : {
@@ -257,6 +323,12 @@
             "value" : "Check for Updates…"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Проверить наличие обновлений…"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -277,6 +349,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Community Score: %lld"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Оценка сообщества: %lld"
           }
         },
         "zh-Hans" : {
@@ -301,6 +379,12 @@
             "value" : "VirusTotal encountered an error"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VirusTotal столкнулся с ошибкой"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -321,6 +405,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "File"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Файл"
           }
         },
         "zh-Hans" : {
@@ -346,6 +436,12 @@
             "value" : "File Batch"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Несколько файлов"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -366,6 +462,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Back to Selection Page"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вернуться на страницу выбора"
           }
         },
         "zh-Hans" : {
@@ -390,6 +492,12 @@
             "value" : "Add More Files"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавить больше файлов"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -410,6 +518,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cancel All"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отменить всё"
           }
         },
         "zh-Hans" : {
@@ -434,6 +548,12 @@
             "value" : "Or drag and drop files here"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Или перетащите файлы сюда"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -454,6 +574,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Open Files in Finder..."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Открыть Finder…"
           }
         },
         "zh-Hans" : {
@@ -478,6 +604,12 @@
             "value" : "Start Batch Analysis"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Начать массовый анализ"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -498,6 +630,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Clear all files"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Очистить все файлы"
           }
         },
         "zh-Hans" : {
@@ -522,6 +660,12 @@
             "value" : "Dismiss"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Игнорировать"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -542,6 +686,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Error Details"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Подробности ошибки"
           }
         },
         "zh-Hans" : {
@@ -566,6 +716,12 @@
             "value" : "%lld files selected"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld файлов выбрано"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -586,6 +742,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Progress: %1$lld/%2$lld"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Прогресс: %1$lld/%2$lld"
           }
         },
         "zh-Hans" : {
@@ -610,6 +772,12 @@
             "value" : "Analyzing"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Анализ"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -630,6 +798,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Clean"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Чисто"
           }
         },
         "zh-Hans" : {
@@ -654,6 +828,12 @@
             "value" : "Malicious"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вредоносный"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -674,6 +854,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ready"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Готово"
           }
         },
         "zh-Hans" : {
@@ -698,6 +884,12 @@
             "value" : "File Batch Analysis"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Анализ нескольких файлов"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -715,6 +907,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• %@"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "• %@"
@@ -742,6 +940,12 @@
             "value" : "Or drag and drop a file to analyze"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Или перетащите файл для анализа"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -762,6 +966,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Open File in Finder..."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Открыть Finder…"
           }
         },
         "zh-Hans" : {
@@ -786,6 +996,12 @@
             "value" : "Confirm Upload"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Подтвердите загрузку"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -806,6 +1022,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Detected File Type: %@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обнаружен тип файла: %@"
           }
         },
         "zh-Hans" : {
@@ -830,6 +1052,12 @@
             "value" : "Uploading..."
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Загрузка..."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -847,6 +1075,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ (%2$@)"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@ (%2$@)"
@@ -874,6 +1108,12 @@
             "value" : "You can always head back to the file selection page here."
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы всегда можете вернуться на страницу выбора здесь."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -894,6 +1134,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Back to Selection Page"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вернуться на страницу выбора"
           }
         },
         "zh-Hans" : {
@@ -918,6 +1164,12 @@
             "value" : "Give it a moment, the analysis could take a few minutes."
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Подождите немного, анализ может занять несколько минут."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -938,6 +1190,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Almost there"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Почти готово"
           }
         },
         "zh-Hans" : {
@@ -962,6 +1220,12 @@
             "value" : "File Analysis"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Анализ файлов"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -982,6 +1246,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Back to Selection Page"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вернуться на страницу выбора"
           }
         },
         "zh-Hans" : {
@@ -1006,6 +1276,12 @@
             "value" : "This number indicates from how many different sources the file has been posted from."
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Это число указывает, из скольких разных источников был загружен файл."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1026,6 +1302,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Unique Sources"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Уникальные источники"
           }
         },
         "zh-Hans" : {
@@ -1050,6 +1332,12 @@
             "value" : "Unique Sources: %lld"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Уникальные источники: %lld"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1064,6 +1352,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Filtrovat protokoly…"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Фильтрация журналов…"
           }
         },
         "zh-Hans" : {
@@ -1089,6 +1383,12 @@
             "value" : "Confirmed Timeout"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Превышено время ожидания"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1110,6 +1410,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Failure"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сбой"
           }
         },
         "zh-Hans" : {
@@ -1135,6 +1441,12 @@
             "value" : "Harmless"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Безвредно"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1156,6 +1468,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Malicious"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вредоносный"
           }
         },
         "zh-Hans" : {
@@ -1181,6 +1499,12 @@
             "value" : "Suspicious"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Подозрительный"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1202,6 +1526,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Timeout"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Превышено время ожидания"
           }
         },
         "zh-Hans" : {
@@ -1227,6 +1557,12 @@
             "value" : "Type Unsupported"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тип не поддерживается"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1248,6 +1584,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Undetected"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не обнаружено"
           }
         },
         "zh-Hans" : {
@@ -1272,6 +1614,12 @@
             "value" : "Last Analysis"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Последний анализ"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1292,6 +1640,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cancel"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отмена"
           }
         },
         "zh-Hans" : {
@@ -1316,6 +1670,12 @@
             "value" : "Clear"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Очистить"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1336,6 +1696,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "You can’t undo this action."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Это действие нельзя отменить."
           }
         },
         "zh-Hans" : {
@@ -1360,6 +1726,12 @@
             "value" : "Are you sure you want to clear the entire scanning history?"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы уверены, что хотите очистить всю историю сканирования?"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1380,6 +1752,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Community Score"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Рейтинг сообщества"
           }
         },
         "zh-Hans" : {
@@ -1404,6 +1782,12 @@
             "value" : "Malicious"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вредоносный"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1424,6 +1808,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Status"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Статус"
           }
         },
         "zh-Hans" : {
@@ -1448,6 +1838,12 @@
             "value" : "Target"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Цель"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1468,6 +1864,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Clear History"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Очистить историю"
           }
         },
         "zh-Hans" : {
@@ -1492,6 +1894,12 @@
             "value" : "Clear Scanning History"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Очистить историю сканирования"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1512,6 +1920,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Type"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тип"
           }
         },
         "zh-Hans" : {
@@ -1538,6 +1952,12 @@
             "value" : "Home"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Главная"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1558,6 +1978,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daily Quota"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Суточная квота"
           }
         },
         "zh-Hans" : {
@@ -1582,6 +2008,12 @@
             "value" : "Hourly Quota"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Часовая квота"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1602,6 +2034,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Monthly Quota"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Месячная квота"
           }
         },
         "zh-Hans" : {
@@ -1626,6 +2064,12 @@
             "value" : "Used: %1$lld/%2$lld"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Использовано: %1$lld/%2$lld"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1646,6 +2090,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Checking Service Status..."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Проверка состояния сервиса..."
           }
         },
         "zh-Hans" : {
@@ -1670,6 +2120,12 @@
             "value" : "Connection failed"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Соединение не удалось"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1690,6 +2146,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Retry"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Повторить"
           }
         },
         "zh-Hans" : {
@@ -1714,6 +2176,12 @@
             "value" : "Service is up and running"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сервис работает"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1734,6 +2202,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Analyze a file with VirusTotal"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Проанализируйте файл с помощью VirusTotal"
           }
         },
         "zh-Hans" : {
@@ -1758,6 +2232,12 @@
             "value" : "Analyze File"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Анализ файла"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1778,6 +2258,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Analyze File"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Анализ файла"
           }
         },
         "zh-Hans" : {
@@ -1802,6 +2288,12 @@
             "value" : "Done"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Готово"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1822,6 +2314,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Or get your API key [here](https://www.virustotal.com/gui/my-apikey) if you already have one."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Или получите свой API-ключ [здесь](https://www.virustotal.com/gui/my-apikey), если он у вас уже есть."
           }
         },
         "zh-Hans" : {
@@ -1846,6 +2344,12 @@
             "value" : "You can change this later in Settings"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы сможете изменить это позже в Настройках."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1866,6 +2370,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sign up for a VirusTotal Account [here](https://www.virustotal.com/gui/join-us)"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Зарегистрируйтесь в VirusTotal [здесь](https://www.virustotal.com/gui/join-us)"
           }
         },
         "zh-Hans" : {
@@ -1890,6 +2400,12 @@
             "value" : "VirusTotal for macOS"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VirusTotal для macOS"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1904,6 +2420,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Úroveň"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Уровень"
           }
         },
         "zh-Hans" : {
@@ -1928,6 +2450,12 @@
             "value" : "Analysis in progress (%@s) ..."
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Анализ в процессе (%@s) ..."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1948,6 +2476,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No Logs Available"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Журналы отсутствуют"
           }
         },
         "zh-Hans" : {
@@ -1972,6 +2506,12 @@
             "value" : "Inspect Logs"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Проверить журналы"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1992,6 +2532,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Search"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поиск"
           }
         },
         "zh-Hans" : {
@@ -2016,6 +2562,12 @@
             "value" : "File"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Файл"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2036,6 +2588,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "File Batch"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Несколько файлов"
           }
         },
         "zh-Hans" : {
@@ -2060,6 +2618,12 @@
             "value" : "Home"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Главная"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2082,6 +2646,12 @@
             "value" : "Go"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Перейти"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2099,6 +2669,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URL"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "URL"
@@ -2126,6 +2702,12 @@
             "value" : "Provide Feedback"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Предоставьте обратную связь"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2146,6 +2728,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "About VirusTotal"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Про VirusTotal"
           }
         },
         "zh-Hans" : {
@@ -2170,6 +2758,12 @@
             "value" : "New Window"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Новое окно"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2190,6 +2784,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "or drop a file"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "или перетащите файл"
           }
         },
         "zh-Hans" : {
@@ -2214,6 +2814,12 @@
             "value" : "Analysis Completed"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Анализ завершен"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2234,6 +2840,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Analysis Failed"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Анализ не удался"
           }
         },
         "zh-Hans" : {
@@ -2258,6 +2870,12 @@
             "value" : "Upload Failed"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Загрузка не удалась"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2278,6 +2896,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Advanced"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Продвинутый"
           }
         },
         "zh-Hans" : {
@@ -2302,6 +2926,12 @@
             "value" : "Mini Mode"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Мини-режим"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2324,6 +2954,12 @@
             "value" : "Relaunch app to take effect"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Перезапустите приложение, чтобы изменения вступили в силу"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2341,6 +2977,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "API"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "API"
@@ -2368,6 +3010,12 @@
             "value" : "OK"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2387,7 +3035,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "You can sign up for a VirusTotal account at https://virustotal.com/gui/join-us to retreive your API key and username"
+            "value" : "You can sign up for a VirusTotal account at https://virustotal.com/gui/join-us to retrieve your API key and username"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы можете зарегистрировать учетную запись VirusTotal по адресу https://virustotal.com/gui/join-us, чтобы получить свой API-ключ и имя пользователя."
           }
         },
         "zh-Hans" : {
@@ -2412,6 +3066,12 @@
             "value" : "Where to get my API Key and Username"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Где получить мой API-ключ и имя пользователя"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2434,6 +3094,12 @@
             "value" : "API Key"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "API-ключ"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2451,6 +3117,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "xxxxxx"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "xxxxxx"
@@ -2478,6 +3150,12 @@
             "value" : "Please check the information you entered"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пожалуйста, проверьте введенную вами информацию"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2498,6 +3176,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "VirusTotal is ready to use!"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VirusTotal готов к использованию!"
           }
         },
         "zh-Hans" : {
@@ -2522,6 +3206,12 @@
             "value" : "Unknown verification status"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Неизвестный статус проверки"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2542,6 +3232,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Username"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Имя пользователя"
           }
         },
         "zh-Hans" : {
@@ -2566,6 +3262,12 @@
             "value" : "Case-sensitive"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "С учетом регистра"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2586,6 +3288,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Verify"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Проверить"
           }
         },
         "zh-Hans" : {
@@ -2610,6 +3318,12 @@
             "value" : "Verification Failed"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Проверка не пройдена"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2630,6 +3344,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Verification Succeeded"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Успешная проверка"
           }
         },
         "zh-Hans" : {
@@ -2654,6 +3374,12 @@
             "value" : "General"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Общее"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2674,6 +3400,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Check for updates"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Проверить наличие обновлений"
           }
         },
         "zh-Hans" : {
@@ -2698,6 +3430,12 @@
             "value" : "Check Now"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Проверить сейчас"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2718,6 +3456,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Remove tracking query in Final URL"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удалите отслеживающий запрос в итоговом URL"
           }
         },
         "zh-Hans" : {
@@ -2742,6 +3486,12 @@
             "value" : "Launch at login"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Запуск при входе в систему"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2762,6 +3512,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Enable Notifications"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Включить уведомления"
           }
         },
         "zh-Hans" : {
@@ -2786,6 +3542,12 @@
             "value" : "Default Service View"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вид службы по умолчанию"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2808,6 +3570,12 @@
             "value" : "Automatically check for updates"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Автоматическая проверка обновлений"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2828,6 +3596,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Current version: %@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Текущая версия: %@"
           }
         },
         "zh-Hans" : {
@@ -2853,6 +3627,12 @@
             "value" : "File Batch"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Несколько файлов"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2874,6 +3654,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "File"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Файл"
           }
         },
         "zh-Hans" : {
@@ -2899,6 +3685,12 @@
             "value" : "Scan History"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "История сканов"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2920,6 +3712,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Home"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Главная"
           }
         },
         "zh-Hans" : {
@@ -2945,6 +3743,12 @@
             "value" : "Logs"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Журналы"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2967,6 +3771,12 @@
             "value" : "Services"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Службы"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2987,6 +3797,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tools"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Инструменты"
           }
         },
         "zh-Hans" : {
@@ -3012,6 +3828,12 @@
             "value" : "URL"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URL"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3026,6 +3848,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Čas"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Время"
           }
         },
         "zh-Hans" : {
@@ -3050,6 +3878,12 @@
             "value" : "Request Rescan"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Запросить повторное сканирование"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3067,6 +3901,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URL"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "URL"
@@ -3094,6 +3934,12 @@
             "value" : "View on VirusTotal"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Посмотреть на VirusTotal"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3114,6 +3960,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Scan"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сканировать"
           }
         },
         "zh-Hans" : {
@@ -3138,6 +3990,12 @@
             "value" : "Final URL is the URL that a redirection chain lands on. This can be helpful in detecting phishing attempts or other malicious websites trying to mask their true destination."
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Конечный URL — это URL-адрес, на который ведет цепочка перенаправлений. Это может быть полезно для обнаружения фишинговых атак или других вредоносных веб-сайтов, пытающихся скрыть свой истинный адрес назначения."
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3160,6 +4018,12 @@
             "value" : "Final URL"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Финальный URL"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3177,6 +4041,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "https://example.com"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "https://example.com"
@@ -3204,6 +4074,12 @@
             "value" : "URL Analysis"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Анализ URL"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3224,6 +4100,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Scan a URL or IP address"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сканирование URL или IP-адреса"
           }
         },
         "zh-Hans" : {
@@ -3248,6 +4130,12 @@
             "value" : "%1$lld/%2$lld security vendor flagged this URL as malicious"
           }
         },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$lld/%2$lld поставщиков безопасности пометили этот URL как вредоносный"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3268,6 +4156,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "VirusTotal for macOS"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VirusTotal для macOS"
           }
         },
         "zh-Hans" : {
