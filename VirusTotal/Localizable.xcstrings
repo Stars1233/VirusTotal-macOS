@@ -1346,28 +1346,6 @@
         }
       }
     },
-    "Filter logs…" : {
-      "localizations" : {
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Filtrovat protokoly…"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Фильтрация журналов…"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "筛选日志…"
-          }
-        }
-      }
-    },
     "flag.confirmed.timeout" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -2414,28 +2392,6 @@
         }
       }
     },
-    "Level" : {
-      "localizations" : {
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Úroveň"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Уровень"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "级别"
-          }
-        }
-      }
-    },
     "loading.title.progress (%@s)..." : {
       "localizations" : {
         "cs" : {
@@ -2460,6 +2416,227 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "正在分析 (%@s) ..."
+          }
+        }
+      }
+    },
+    "log.level.all" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "所有日志"
+          }
+        }
+      }
+    },
+    "log.level.critical" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Critical"
+          }
+        }
+      },
+      "shouldTranslate" : false
+    },
+    "log.level.debug" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Debug"
+          }
+        }
+      },
+      "shouldTranslate" : false
+    },
+    "log.level.error" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error"
+          }
+        }
+      },
+      "shouldTranslate" : false
+    },
+    "log.level.fault" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fault"
+          }
+        }
+      },
+      "shouldTranslate" : false
+    },
+    "log.level.info" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Info"
+          }
+        }
+      },
+      "shouldTranslate" : false
+    },
+    "log.level.verbose" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verbose"
+          }
+        }
+      },
+      "shouldTranslate" : false
+    },
+    "log.level.warning" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Warning"
+          }
+        }
+      },
+      "shouldTranslate" : false
+    },
+    "log.picker.level" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Level"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "日志级别"
+          }
+        }
+      }
+    },
+    "log.picker.time" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Time"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "日志时间"
+          }
+        }
+      }
+    },
+    "log.searchfield" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filter logs…"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "过滤日志"
+          }
+        }
+      }
+    },
+    "log.time.all" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All time"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "所有时间"
+          }
+        }
+      }
+    },
+    "log.time.last_1_hour" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Last 1 hour"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "过去1小时"
+          }
+        }
+      }
+    },
+    "log.time.last_1_min" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Last 1 min"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "过去1分钟"
+          }
+        }
+      }
+    },
+    "log.time.last_5_min" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Last 5 min"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "过去5分钟"
+          }
+        }
+      }
+    },
+    "log.time.last_15_min" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Last 15 min"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "过去15分钟"
           }
         }
       }
@@ -3838,28 +4015,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "网址"
-          }
-        }
-      }
-    },
-    "Time" : {
-      "localizations" : {
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Čas"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Время"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "时间"
           }
         }
       }

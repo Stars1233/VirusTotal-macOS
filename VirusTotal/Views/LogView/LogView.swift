@@ -21,6 +21,19 @@ private enum LogLevelFilter: String, CaseIterable, Identifiable {
 
     var id: String { rawValue }
 
+    var localizedName: String {
+        switch self {
+        case .all:       String(localized: "log.level.all")
+        case .verbose:   String(localized: "log.level.verbose")
+        case .debug:     String(localized: "log.level.debug")
+        case .info:      String(localized: "log.level.info")
+        case .warning:   String(localized: "log.level.warning")
+        case .error:     String(localized: "log.level.error")
+        case .critical:  String(localized: "log.level.critical")
+        case .fault:     String(localized: "log.level.fault")
+        }
+    }
+
     var emoji: String {
         switch self {
         case .all:                       "🗂️"
@@ -43,6 +56,16 @@ private enum TimeRangeFilter: String, CaseIterable, Identifiable {
     case last1h   = "Last 1 hour"
 
     var id: String { rawValue }
+
+    var localizedName: String {
+        switch self {
+        case .all:     String(localized: "log.time.all")
+        case .last1m:  String(localized: "log.time.last_1_min")
+        case .last5m:  String(localized: "log.time.last_5_min")
+        case .last15m: String(localized: "log.time.last_15_min")
+        case .last1h:  String(localized: "log.time.last_1_hour")
+        }
+    }
 
     var cutoff: Date? {
         switch self {
@@ -124,7 +147,7 @@ struct LogView: View {
             HStack(spacing: 4) {
                 Image(systemName: "magnifyingglass")
                     .foregroundStyle(.secondary)
-                TextField("Filter logs…", text: $searchText)
+                TextField("log.searchfield", text: $searchText)
                     .textFieldStyle(.plain)
                 if !searchText.isEmpty {
                     Button { searchText = "" } label: {
@@ -139,9 +162,9 @@ struct LogView: View {
             .background(.quaternary, in: RoundedRectangle(cornerRadius: 7))
 
             // Level picker
-            Picker("Level", selection: $levelFilter) {
+            Picker("log.picker.level", selection: $levelFilter) {
                 ForEach(LogLevelFilter.allCases) { level in
-                    Text("\(level.emoji) \(level.rawValue.capitalized)")
+                    Text("\(level.emoji) \(level.localizedName)")
                         .tag(level)
                 }
             }
@@ -149,9 +172,9 @@ struct LogView: View {
             .frame(maxWidth: 130)
 
             // Time range picker
-            Picker("Time", selection: $timeFilter) {
+            Picker("log.picker.time", selection: $timeFilter) {
                 ForEach(TimeRangeFilter.allCases) { range in
-                    Text(range.rawValue).tag(range)
+                    Text(range.localizedName).tag(range)
                 }
             }
             .labelsHidden()
